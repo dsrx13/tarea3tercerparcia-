@@ -1,0 +1,147 @@
+/* Estilos generales para la página */
+body {
+    font-family: 'Merriweather', serif; /* Fuente elegante y serifada */
+    background-color: #f5f5f5; /* Fondo gris muy claro (se sobreescribe con la imagen) */
+    background-image: url('https://img.freepik.com/vector-gratis/diagramas-porcentaje-circulo-infografias-graficos-contorno-fino-negro-aislados-fondo-blanco-circulo-dividido-porcentajes-5_145391-855.jpg'); /* Agrega tu imagen de fondo aquí */
+    background-size: cover; /* Cubre toda la página sin distorsionar la imagen */
+    background-position: center center; /* Centra la imagen en el viewport */
+    background-attachment: fixed; /* La imagen se fija en la pantalla cuando haces scroll */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Texto oscuro pero suave */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia para ver la imagen de fondo */
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid #e0e0e0; /* Borde suave */
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(248, 248, 248, 0.9)); /* Fondo con sutil degradado semitransparente */
+    backdrop-filter: blur(10px); /* Agrega un desenfoque detrás de la tarjeta */
+}
+
+/* Título */
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333; /* Título oscuro */
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif; /* Fuente serif sofisticada */
+}
+
+/* Estilo para el campo de entrada (monto) */
+#Entrada {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 25px;
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+/* Cambia el color del borde del input al hacer focus */
+#Entrada:focus {
+    border-color: #c49b63; /* Color dorado cuando el campo tiene foco */
+    background-color: #fff;
+    outline: none;
+}
+
+/* Estilo para el campo de selección (porcentaje) */
+#porcentaje {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 25px;
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+/* Cambia el color del borde al hacer focus */
+#porcentaje:focus {
+    border-color: #c49b63; /* Dorado para el enfoque */
+    outline: none;
+    background-color: #fff;
+}
+
+/* Estilo para el resultado */
+#Resultado {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #444; /* Color de texto suave */
+    padding: 15px;
+    background-color: #fafafa; /* Fondo sutil */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Merriweather', serif; /* Fuente elegante en el resultado */
+}
+
+/* Para mostrar el resultado de forma exitosa (color verde) */
+#Resultado.success {
+    color: #28a745; /* Verde éxito */
+    background-color: #d4edda; /* Fondo verde suave */
+}
+
+/* Para mostrar el resultado de forma de error (color rojo) */
+#Resultado.error {
+    color: #dc3545; /* Rojo error */
+    background-color: #f8d7da; /* Fondo rojo suave */
+}
+
+/* Estilo para el botón de calcular */
+#Calcular {
+    background-color: #c49b63; /* Dorado elegante */
+    color: white;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 20px rgba(196, 155, 99, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+#Calcular:hover {
+    background-color: #d8a752; /* Dorado más oscuro */
+    box-shadow: 0 12px 24px rgba(196, 155, 99, 0.3);
+}
+
+/* Efecto activo para el botón */
+#Calcular:active {
+    background-color: #a87d42; /* Dorado más oscuro */
+    transform: scale(0.98); /* Pulsación al hacer clic */
+}
+
+/* Estilo para el formulario */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el div con el resultado */
+#Resultado {
+    font-family: 'Merriweather', serif; /* Aseguramos que el resultado use la misma fuente elegante */
+    letter-spacing: 0.5px;
+}

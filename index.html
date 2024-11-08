@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Préstamos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Préstamos</h2>
+        
+        <!-- Formulario para ingresar el monto y seleccionar el porcentaje -->
+        <form id="prestamo-form">
+            <label for="Entrada">Monto:</label>
+            <input type="number" id="Entrada" placeholder="Ingresa el monto" required />
+
+            <label for="porcentaje">Selecciona el porcentaje:</label>
+            <select id="porcentaje">
+                <option value="0.1">10%</option>
+                <option value="0.2">20%</option>
+                <option value="0.3" selected>30%</option>
+                <option value="0.4">40%</option>
+                <option value="0.5">50%</option>
+                <option value="0.6">60%</option>
+                <option value="0.7">70%</option>
+                <option value="0.8">80%</option>
+                <option value="0.9">90%</option>
+            </select>
+
+            <button type="button" id="Calcular">Calcular</button>
+        </form>
+
+        <!-- Área donde se mostrará el resultado -->
+        <div id="Resultado"></div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
